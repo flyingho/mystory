@@ -12,29 +12,64 @@
 
     gtag('config', 'UA-118581540-1');
   </script>
+  <style>
+    a {
+      color:tomato;
+      text-decoration: none;
+    }
+    h1{
+      text-align: center;
+      font-size: 2.5em; /* 40px/16=2.5em */
+      border-bottom: 1px double gray;
+      margin:0px;
+    }
+    ol{
+      border-right: 1px double gray;
+      padding : 20px;
+      width : 120px;
+      margin : 0px;
+    }
+    #grid{
+      display: grid;
+      grid-template-columns: 200px 1fr
+    }
+    #grid ol{
+      padding-left:20px;
+    }
+    #grid #article{
+      padding-left: 5px;
+
+    }
+  </style>
 
 </head>
 
 <body>
-  <h1><a href="index.html">Simon Ho's story book</a></h1>
-  <ol>
-    <li><a href="1.profile.html">Profile</a></li>
-    <li>Book concert   </li>
-    <li>Traveling      </li>
-    <li><a href="4.coding.html">Coding   </a></li>
-    <li>Study english  </li>
-    <li>Something else </li>
-  </ol>
+  <h1><a href="index.html" >Simon Ho's story book</a></h1>
+  <div id="grid">
+    <ol>
+      <li><a href="1.profile.html">Profile</a></li>
+      <li>Book concert   </li>
+      <li>Traveling      </li>
+      <li><a href="4.coding.html">Coding   </a></li>
+      <li>Study english  </li>
+      <li>Something else </li>
+      <li>Playing guitar </li>
+      <li>Saying </li>
+    </ol>
+    <div id="article">
+      <p>
+      이 웹사이트에서는 저에 대해서 or 제가 하고 있는 활동들에 대해서 기술하고 있습니다.</br>
+      궁금하신 사항에 대해서는 언제든 댓글을 남겨주세요.
+      </p>
+      <p style="margin-top:10px;">
+      😎굉장한 이야기는 없지만,코딩을 공부함에 있어 한 걸음 나아가는 데 도움이 되기를 바라며..</br>
+      18/5/2 16:42 start.
+      </p>
+      <img src="IMG_8135.jpg" width="80%">
+    </div>
+  </div>
 
-  <p>
-  이 웹사이트에서는 저에 대해서 or 제가 하고 있는 활동들에 대해서 기술하고 있습니다.</br>
-  궁금하신 사항에 대해서는 언제든 댓글을 남겨주세요.
-  </p>
-  <p style="margin-top:10px;">
-  😎굉장한 이야기는 없지만,코딩을 공부함에 있어 한 걸음 나아가는 데 도움이 되기를 바라며..</br>
-  18/5/2 16:42 start.
-  </p>
-  <img src="IMG_8135.jpg" width="100%">
 
   <p>
   <div id="disqus_thread"></div>

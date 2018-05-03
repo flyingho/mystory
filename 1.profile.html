@@ -12,18 +12,48 @@
 
   gtag('config', 'UA-118581540-1');
 </script>
+<style>
+  a {
+    color:tomato;
+    text-decoration: none;
+  }
+  h1{
+    text-align: center;
+    font-size: 2.5em; /* 40px/16=2.5em */
+    border-bottom: 1px double gray;
+    margin:0px;
+  }
+  h2{
+    text-align: left;
+    font-size: 20px; /* 40px/16=2.5em */
+    border-right: 1px double gray;
+    margin:0px;
+  }
 
+  #grid{
+    display: grid;
+    grid-template-columns: 100px 1fr;
+  }
+  #grid #article{
+    padding:10px;
+  }
+</style>
 </head>
 
 <body>
   <h1><a href="index.html">Simon Ho's story book</a></h1>
-  <h2>Profile</h2>
-  <img src="IMG_8502.jpg" width="50%">
-    <li>별명 : 날아라기팔아(Simon) </li>
-    <li>거주지:서울              </li>
-    <li>나이 : 30대 초반         </li>
-    <li>직업 : 자동차부품 연구원    </li>
-    <li>취미 : 맛집탐방/한량/만담꾼  </li>
+  <div id="grid">
+    <h2 style ="color:tomato">Profile</h2>
+    <div id="article">
+      <li>별명 : 날아라기팔아(Simon) </li>
+      <li>거주지:서울              </li>
+      <li>나이 : 30대 초반         </li>
+      <li>직업 : 자동차부품 연구원    </li>
+      <li>취미 : 맛집탐방/한량/만담꾼  </li>
+      <img src="IMG_8502.jpg" width="80%">
+    </div>
+  </div>
+
 
 
     <p>
